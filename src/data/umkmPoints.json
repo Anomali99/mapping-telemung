@@ -1,0 +1,192 @@
+[
+    {
+        "name": "Muzakki Farm",
+        "description": "Usaha peternakan lokal yang menghasilkan produk ternak untuk pasar sekitar, terdaftar di Google Maps.",
+        "hamlet": "Watugepeng",
+        "category": "Pertanian / Peternakan",
+        "icon": "leaf",
+        "position": [-8.139229, 114.313864],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 1
+            }
+        ]
+    },
+    {
+        "name": "Pengolahan Pupuk Kompos",
+        "description": "Produsen pupuk kompos organik dari bahan alami yang mendukung pertanian berkelanjutan.",
+        "hamlet": "Watugepeng",
+        "category": "Pertanian / Peternakan",
+        "icon": "leaf",
+        "position": [-8.1385126, 114.3136426],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 3
+            }
+        ]
+    },
+    {
+        "name": "Slamet Laundry",
+        "description": "Layanan cuci pakaian profesional untuk warga Watugepeng dan sekitarnya.",
+        "hamlet": "Watugepeng",
+        "category": "Jasa Laundry",
+        "icon": "shirt",
+        "position": [-8.137866, 114.314486],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 4
+            }
+        ]
+    },
+    {
+        "name": "Rama Kopi",
+        "description": "Produsen kopi lokal khas Telemung yang memasarkan produknya secara online melalui Shopee dan Google Maps.",
+        "hamlet": "Watugepeng",
+        "category": "Kuliner",
+        "icon": "coffee",
+        "position": [-8.13879931625203, 114.31628514736106],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 5
+            }
+        ]
+    },
+    {
+        "name": "Dinava Farm",
+        "description": "",
+        "hamlet": "Watugepeng",
+        "category": "Pertanian / Peternakan",
+        "icon": "leaf",
+        "position": [-8.1397114, 114.3148411],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 6
+            }
+        ]
+    },
+    {
+        "name": "Kedai Mami Carla",
+        "description": "Produsen pupuk kompos organik dari bahan alami yang mendukung pertanian berkelanjutan.",
+        "hamlet": "Watugepeng",
+        "category": "Kuliner",
+        "icon": "coffee",
+        "position": [-8.1398302, 114.314646],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 7
+            }
+        ]
+    },
+    {
+        "name": "Toko Bangunan Pak Cahyo",
+        "description": "Toko yang menyediakan kebutuhan bahan bangunan bagi masyarakat Desa Telemung.",
+        "hamlet": "Watugepeng",
+        "category": "Toko Bangunan",
+        "icon": "hammer",
+        "position": [-8.139690720781473, 114.31470220749564],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 8
+            }
+        ]
+    },
+    {
+        "name": "Toko Lusiati",
+        "description": "Toko kelontong yang memenuhi kebutuhan harian warga di Krajan dan sekitarnya.",
+        "hamlet": "Krajan",
+        "category": "Toko Kelontong",
+        "icon": "store",
+        "position": [-8.138562, 114.313192],
+        "visited": [
+            {
+                "date": "03-07-2025",
+                "order": 2
+            }
+        ]
+    },
+    {
+        "name": "Keripik Singkong dan Pisang Bu Marsiah",
+        "description": "Penyedia berbagai kebutuhan harian masyarakat dengan pelayanan lokal di Krajan.",
+        "hamlet": "Krajan",
+        "category": "Industri Rumahan",
+        "icon": "factory",
+        "position": [-8.138188362151098, 114.30535748943555],
+        "visited": [
+            {
+                "date": "05-07-2025",
+                "order": 1
+            }
+        ]
+    },
+    {
+        "name": "Susu Kambing Etawa Bu Marni",
+        "description": "Penyedia susu kambing murni untuk konsumsi masyarakat dengan potensi branding produk kesehatan.",
+        "hamlet": "Krajan",
+        "category": "Pertanian / Peternakan",
+        "icon": "leaf",
+        "position": [-8.139671620379454, 114.30273296399781],
+        "visited": []
+    },
+    {
+        "name": "Pabrik Kerupuk Ikan (Pak Syahri)",
+        "description": "Produsen kerupuk dengan pemasaran daring melalui Shopee dan terdaftar di Google Maps.",
+        "hamlet": "Gedor",
+        "category": "Industri Rumahan",
+        "icon": "factory",
+        "position": [-8.152927416495771, 114.31779800347643],
+        "visited": [
+            {
+                "date": "07-07-2025",
+                "order": 1
+            }
+        ]
+    },
+    {
+        "name": "Kopi Isun",
+        "description": "Produk kopi khas Wonosuko yang dipasarkan secara digital menggunakan Linktree sebagai media promosi.",
+        "hamlet": "Wonosuko",
+        "category": "Kuliner",
+        "icon": "coffee",
+        "position": [-8.143724864768181, 114.30197127025927],
+        "visited": []
+    },
+    {
+        "name": "Gula Semut",
+        "description": "Penghasil gula aren organik berkualitas dengan kemasan modern, menjadi salah satu oleh-oleh khas Banyuwangi.",
+        "hamlet": "Wonosuko",
+        "category": "Industri Rumahan",
+        "icon": "factory",
+        "position": [-8.149047, 114.30563],
+        "visited": []
+    },
+    {
+        "name": "Toko Afiza",
+        "description": "Swalayan yang menyediakan berbagai kebutuhan rumah tangga di Telemungsari",
+        "hamlet": "Telemungsari",
+        "category": "Toko Kelontong",
+        "icon": "store",
+        "position": [-8.1346942, 114.2994006],
+        "visited": []
+    },
+    {
+        "name": "Toko Bu Samsuri",
+        "description": "Penyedia berbagai kebutuhan harian masyarakat dengan pelayanan lokal di Krajan.",
+        "hamlet": "Krajan",
+        "category": "Toko Kelontong",
+        "icon": "store",
+        "position": [-8.1400701, 114.311809],
+        "visited": [
+            {
+                "date": "05-07-2025",
+                "order": 2
+            }
+        ]
+    }
+]

@@ -99,81 +99,92 @@ function App() {
                 }
             >
                 <div className="flex w-max flex-col items-end gap-4 bg-white p-2 lg:flex-row-reverse lg:items-center">
-                    <div className="flex w-max flex-row-reverse gap-4">
-                        <TabsList>
-                            <TabsTrigger value="village">Desa</TabsTrigger>
-                            <TabsTrigger value="hamlet">Dusun</TabsTrigger>
-                        </TabsList>
+                    <div className="flex w-max flex-col gap-4 md:flex-row-reverse">
+                        <div className="flex w-max flex-row-reverse justify-end gap-4">
+                            <TabsList>
+                                <TabsTrigger value="village">Desa</TabsTrigger>
+                                <TabsTrigger value="hamlet">Dusun</TabsTrigger>
+                            </TabsList>
 
-                        <Select
-                            defaultValue="default"
-                            onValueChange={setTheme}
-                            value={theme}
-                        >
-                            <SelectTrigger className="w-[180px]">
-                                <SelectValue placeholder="Theme" />
-                            </SelectTrigger>
-                            <SelectContent className="">
-                                <SelectItem value="default">Default</SelectItem>
-                                <SelectItem value="satellite">
-                                    Satellite
-                                </SelectItem>
-                                <SelectItem value="dark">Dark</SelectItem>
-                            </SelectContent>
-                        </Select>
-
-                        <Select
-                            defaultValue="all"
-                            onValueChange={setCategory}
-                            value={category}
-                        >
-                            <SelectTrigger className="w-[180px]">
-                                <SelectValue placeholder="Category" />
-                            </SelectTrigger>
-                            <SelectContent className="">
-                                <SelectItem value="all">Semua</SelectItem>
-                                <SelectItem value="none">
-                                    Tidak Semua
-                                </SelectItem>
-                                {categories.map((item, index) => (
-                                    <SelectItem key={index} value={item}>
-                                        {item}
+                            <Select
+                                defaultValue="default"
+                                onValueChange={setTheme}
+                                value={theme}
+                            >
+                                <SelectTrigger className="w-[150px]">
+                                    <SelectValue placeholder="Theme" />
+                                </SelectTrigger>
+                                <SelectContent className="">
+                                    <SelectItem value="default">
+                                        Default
                                     </SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-
-                        <Select
-                            defaultValue="none"
-                            onValueChange={setDate}
-                            value={date}
-                        >
-                            <SelectTrigger className="w-[180px]">
-                                <SelectValue placeholder="Pilih Tanggal" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="none">
-                                    Tidak Semua
-                                </SelectItem>
-                                {visited.map((item, index) => {
-                                    const parseItem = parseCustomDate(item);
-                                    return (
+                                    <SelectItem value="satellite">
+                                        Satellite
+                                    </SelectItem>
+                                    <SelectItem value="dark">Dark</SelectItem>
+                                </SelectContent>
+                            </Select>
+                        </div>
+                        <div className="flex w-max flex-row-reverse justify-end gap-4">
+                            <Select
+                                defaultValue="all"
+                                onValueChange={setCategory}
+                                value={category}
+                            >
+                                <SelectTrigger className="w-[130px]">
+                                    <SelectValue placeholder="Category" />
+                                </SelectTrigger>
+                                <SelectContent className="">
+                                    <SelectItem value="all">Semua</SelectItem>
+                                    <SelectItem value="none">
+                                        Tidak Semua
+                                    </SelectItem>
+                                    {categories.map((item, index) => (
                                         <SelectItem key={index} value={item}>
-                                            {format(
-                                                parseItem,
-                                                "EEEE, dd MMMM yyyy",
-                                                { locale: id }
-                                            )}
+                                            {item}
                                         </SelectItem>
-                                    );
-                                })}
-                            </SelectContent>
-                        </Select>
+                                    ))}
+                                </SelectContent>
+                            </Select>
+
+                            <Select
+                                defaultValue="none"
+                                onValueChange={setDate}
+                                value={date}
+                            >
+                                <SelectTrigger className="w-[130px]">
+                                    <SelectValue placeholder="Pilih Tanggal" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectItem value="none">
+                                        Tidak Semua
+                                    </SelectItem>
+                                    {visited.map((item, index) => {
+                                        const parseItem = parseCustomDate(item);
+                                        return (
+                                            <SelectItem
+                                                key={index}
+                                                value={item}
+                                            >
+                                                {format(
+                                                    parseItem,
+                                                    "EEEE, dd MMMM yyyy",
+                                                    { locale: id }
+                                                )}
+                                            </SelectItem>
+                                        );
+                                    })}
+                                </SelectContent>
+                            </Select>
+                        </div>
                     </div>
                     {activeTab === "hamlet" && (
-                        <div className="flex w-max flex-row items-center justify-center gap-3 rounded-md bg-gray-200 px-3 py-2">
+                        <div className="flex w-[280px] flex-wrap items-center justify-center gap-3 overflow-auto rounded-md bg-gray-200 px-3 py-2 md:w-max md:flex-row">
                             {hamletList.map((item) => (
-                                <div className="flex flex-row gap-2" key={item}>
+                                <div
+                                    className="flex flex-row items-center justify-center gap-2"
+                                    key={item}
+                                >
                                     <Checkbox
                                         className="bg-white"
                                         id={item}
@@ -182,7 +193,12 @@ function App() {
                                             setHamlet(Boolean(checked), item);
                                         }}
                                     />
-                                    <Label htmlFor={item}>{item}</Label>
+                                    <Label
+                                        htmlFor={item}
+                                        className="text-[12px] md:text-base"
+                                    >
+                                        {item}
+                                    </Label>
                                 </div>
                             ))}
                         </div>
